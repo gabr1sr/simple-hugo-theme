@@ -8,8 +8,10 @@ html {
     --fontcolor: rgba(0, 0, 0, 0.8);
     --linkcolor: #007AFF;
     --visitedcolor: #0033FF;
-    --precolor: rgba(0, 0, 0, 0.8);
+    --precolor: rgb(0, 0, 0);
     --prebgcolor: #FFFFFF;
+    --codecolor: #000000;
+    --titlecolor: #000000;
     --fonts-sans: "Inter var", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --fonts-mono: "iAWriter Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -21,8 +23,10 @@ html {
 	--fontcolor: rgba(255, 255, 255, 0.7);
 	--linkcolor: #FFFFFF;
 	--visitedcolor: #DDDDDD;
-	--precolor: rgba(255, 255, 255, 0.7);
+	--precolor: rgb(255, 255, 255);
 	--prebgcolor: #141414;
+	--codecolor: #f8f8f2;
+	--titlecolor: #FFFFFF;
     }
 }
 
@@ -54,7 +58,7 @@ a:active {
 }
 
 h1, h2, h3 {
-    color: #fff;
+    color: var(--titlecolor);
 }
 
 h1 a {
@@ -62,14 +66,14 @@ h1 a {
 }
 
 p > code {
-    color: #f8f8f2;
+    color: var(--precolor);
     background: var(--prebgcolor);
     padding:2px;
 
 }
 
 pre {
-    color: var(--precolor);
+    color: var(--precolor)!important;
     background: var(--prebgcolor);
     background-color: var(--prebgcolor)!important;
     padding: 24px;

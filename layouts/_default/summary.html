@@ -1,0 +1,10 @@
+<article>
+	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	<b><time>{{ .Date.Format (default "02 Jan 2006 15:04:05" .Site.Params.dateFmt) }}</time></b></br>
+	<div class="index-post-summary">
+		{{ .Summary }}
+		{{ if .Truncated }}
+			<a href="{{ .Permalink }}">Continue Reading...</a>
+		{{ end }}
+	</div>
+</article>

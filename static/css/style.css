@@ -4,30 +4,16 @@ html {
 
 :root {
     --width: 800px;
-    --bgcolor: #FFFFFF;
-    --fontcolor: rgba(0, 0, 0, 0.8);
-    --linkcolor: #007AFF;
-    --visitedcolor: #0033FF;
-    --precolor: rgb(0, 0, 0);
-    --prebgcolor: #FFFFFF;
-    --codecolor: #000000;
-    --titlecolor: #000000;
+    --bgcolor: #141414;
+    --fontcolor: rgba(255, 255, 255, 0.7);
+    --linkcolor: #FFFFFF;
+    --visitedcolor: #DDDDDD;
+    --precolor: rgb(255, 255, 255);
+    --prebgcolor: #141414;
+    --codecolor: #f8f8f2;
+    --titlecolor: #FFFFFF;
     --fonts-sans: "Inter var", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --fonts-mono: "iAWriter Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-	--width: 800px;
-	--bgcolor: #141414;
-	--fontcolor: rgba(255, 255, 255, 0.7);
-	--linkcolor: #FFFFFF;
-	--visitedcolor: #DDDDDD;
-	--precolor: rgb(255, 255, 255);
-	--prebgcolor: #141414;
-	--codecolor: #f8f8f2;
-	--titlecolor: #FFFFFF;
-    }
 }
 
 body {
